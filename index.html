@@ -150,8 +150,8 @@
         }
 
         .btn-primary {
-            background: #f56607;
-            color: white;
+            background: #f56607 !important;
+            color: white !important;
             padding: 0.875rem 2rem;
             border-radius: 0.5rem;
             font-weight: 600;
@@ -160,10 +160,12 @@
             transition: all 0.2s ease;
             border: none;
             cursor: pointer;
+            font-size: 1rem;
         }
 
         .btn-primary:hover {
-            background: #e05506;
+            background: #e05506 !important;
+            color: white !important;
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(245, 102, 7, 0.3);
         }
@@ -478,6 +480,12 @@
                 flex-direction: column;
                 gap: 0.75rem;
             }
+
+            .newsletter iframe {
+                width: 100% !important;
+                max-width: 100% !important;
+                height: 400px !important;
+            }
         }
     </style>
 </head>
@@ -514,12 +522,12 @@
                         where I share what I know and what I'm learning about connecting systems.
                     </p>
                     <p class="fade-in-up stagger-3">
-                        I believe in learning in public. Every week, I share my progress, setbacks, and discoveries 
-                        as I transition from integration expert to AI engineer.
+                        I am also learning and upgrading my skills. Every week, I share my progress, setbacks, and discoveries 
+                        as I add to my skills for AI engineering.
                     </p>
                     <div class="hero-buttons fade-in-up stagger-4">
                         <a href="#newsletter" class="btn-primary">Subscribe to Newsletter</a>
-                        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="btn-secondary">Connect on LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/urvashi-p-72287631/"" target="_blank" class="btn-secondary">Connect on LinkedIn</a>
                     </div>
                 </div>
                 <div class="hero-image fade-in-up stagger-2">
@@ -528,69 +536,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Latest Content -->
-    <section class="bg-gray">
-        <div class="container">
-            <h3 class="section-title">Latest Content</h3>
-            <div class="content-list">
-                <a href="#" class="content-item">
-                    <div class="content-item-left">
-                        <span class="content-icon">📧</span>
-                        <div>
-                            <h4>Building with Urva Newsletter #12</h4>
-                            <span class="date">2025-01-10</span>
-                        </div>
-                    </div>
-                    <span class="content-item-arrow">→</span>
-                </a>
-                <a href="#" class="content-item">
-                    <div class="content-item-left">
-                        <span class="content-icon">📝</span>
-                        <div>
-                            <h4>Understanding Python Decorators for Integration Testing</h4>
-                            <span class="date">2025-01-08</span>
-                        </div>
-                    </div>
-                    <span class="content-item-arrow">→</span>
-                </a>
-                <a href="#" class="content-item">
-                    <div class="content-item-left">
-                        <span class="content-icon">🎥</span>
-                        <div>
-                            <h4>Debugging My First AI Project</h4>
-                            <span class="date">2025-01-05</span>
-                        </div>
-                    </div>
-                    <span class="content-item-arrow">→</span>
-                </a>
-                <a href="#" class="content-item">
-                    <div class="content-item-left">
-                        <span class="content-icon">📝</span>
-                        <div>
-                            <h4>How I Approach Learning New Technologies</h4>
-                            <span class="date">2025-01-03</span>
-                        </div>
-                    </div>
-                    <span class="content-item-arrow">→</span>
-                </a>
-                <a href="#" class="content-item">
-                    <div class="content-item-left">
-                        <span class="content-icon">📝</span>
-                        <div>
-                            <h4>Integration Mistakes I See (and Make)</h4>
-                            <span class="date">2024-12-28</span>
-                        </div>
-                    </div>
-                    <span class="content-item-arrow">→</span>
-                </a>
-            </div>
-            <div class="view-all">
-                <a href="#writing">See all posts →</a>
-            </div>
-        </div>
-    </section>
-
     <!-- Newsletter -->
     <section class="newsletter" id="newsletter">
         <div class="container">
@@ -599,11 +544,16 @@
                 Weekly updates on what I'm learning, building, and reading. Join developers and executives 
                 following my journey from integration expert to AI engineer.
             </p>
-            <form class="newsletter-form" onsubmit="return handleSubmit(event)">
-                <input type="email" class="newsletter-input" placeholder="Enter your email" required>
-                <button type="submit" class="btn-primary">Subscribe</button>
-            </form>
-            <p class="newsletter-disclaimer">No spam. Unsubscribe anytime.</p>
+            <div style="text-align: center; margin-top: 2.5rem;">
+                <a href="https://urvaship.substack.com/?utm_campaign=pub&utm_medium=web" 
+                   class="btn-primary" 
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   style="display: inline-block; padding: 1rem 2.5rem; font-size: 1.125rem; text-decoration: none;">
+                    Subscribe to Newsletter →
+                </a>
+                <p style="color: #d1d5db; margin-top: 1rem; font-size: 0.95rem;">Free weekly updates delivered to your inbox</p>
+            </div>
         </div>
     </section>
 
@@ -612,19 +562,19 @@
         <div class="container">
             <h3 class="section-title">Popular Writing</h3>
             <div class="writing-grid">
-                <a href="#" class="writing-card">
-                    <h4>Learning Integration Architecture in Public</h4>
+                <a href="https://integrationinsider.com/category/learn-integration/" class="writing-card">
+                    <h4>Learning Integration</h4>
                     <p>Why I share my journey from Integration Expert to AI Engineer</p>
                 </a>
-                <a href="#" class="writing-card">
+                <a href="https://integrationinsider.com/category/edi/" class="writing-card">
                     <h4>Bridging EDI and Modern APIs</h4>
                     <p>Lessons from 10+ years in integration development</p>
                 </a>
-                <a href="#" class="writing-card">
+                <a href="https://integrationinsider.com/category/pythonandml/" class="writing-card">
                     <h4>Python for Integration Developers</h4>
                     <p>Making the transition from Boomi to code</p>
                 </a>
-                <a href="#" class="writing-card">
+                <a href="https://integrationinsider.com/" class="writing-card">
                     <h4>Building Integration Insider</h4>
                     <p>Creating a knowledge hub while learning in public</p>
                 </a>
@@ -668,9 +618,8 @@
                     <p>Building with Urva • Learning in Public</p>
                 </div>
                 <div class="footer-links">
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-                    <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
-                    <a href="https://github.com/yourhandle" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/urvashi-p-72287631/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/urvashipateldotio" target="_blank">GitHub</a>
                     <a href="https://integrationinsider.com" target="_blank" class="highlight">Integration Insider</a>
                 </div>
             </div>
@@ -687,15 +636,6 @@
                 header.classList.remove('scrolled');
             }
         });
-
-        // Newsletter form handling
-        function handleSubmit(event) {
-            event.preventDefault();
-            const email = event.target.querySelector('input[type="email"]').value;
-            alert('Thanks for subscribing! You\'ll receive updates at ' + email);
-            event.target.reset();
-            return false;
-        }
 
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
