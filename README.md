@@ -4,7 +4,7 @@ Personal website for Urvashi Patel. A clean, professional site showcasing my jou
 
 ## Live Site
 
-[Visit the site](#) (Add your GitHub Pages URL here once deployed)
+[Visit the site]([#](https://www.urvashipatel.io/))
 
 ## About
 
@@ -194,8 +194,6 @@ To update your site:
 ## Credits
 
 Inspired by swyx.io and the "learning in public" philosophy.
-
-Built for the Integration Insider project: [integrationinsider.com](https://integrationinsider.com)
 
 ## License
 
