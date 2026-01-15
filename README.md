@@ -4,7 +4,7 @@ Personal website for Urvashi Patel. A clean, professional site showcasing my jou
 
 ## Live Site
 
-[Visit the site]([#](https://www.urvashipatel.io/))
+[Visit the site](https://www.urvashipatel.io)
 
 ## About
 
