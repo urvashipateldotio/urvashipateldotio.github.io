@@ -205,6 +205,12 @@ Open an issue or reach out:
 - Newsletter: [Building with Urva](https://urvaship.substack.com)
 - Integration Insider: [integrationinsider.com](https://integrationinsider.com)
 
+## Career Chatbot
+
+Chat with my AI career assistant at [urvashipatel.io](https://urvashipatel.io). Click the orange button in the bottom right.
+
+Ask about my experience, skills, projects, or background. Trained on my LinkedIn profile and CV.
+
 ## Changelog
 
 ### Version 1.0 (January 2025)
@@ -213,3 +219,4 @@ Open an issue or reach out:
 - Newsletter integration
 - Mobile responsive
 - Fast performance
+- Career Chatbot
