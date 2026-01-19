@@ -650,5 +650,114 @@
             });
         });
     </script>
+	<!-- Floating Chat Button -->
+<button id="chatButton" onclick="openChat()">
+  💬
+</button>
+
+<!-- Chat Modal -->
+<div id="chatModal" class="chat-modal">
+  <div class="chat-container">
+    <div class="chat-header">
+      <span>Chat with Urva's AI Assistant</span>
+      <button class="close-button" onclick="closeChat()">×</button>
+    </div>
+    <iframe
+      src="https://urvap-uv-run-gradio-deploy.hf.space"
+      width="100%"
+      height="100%"
+      style="border:none;">
+    </iframe>
+  </div>
+</div>
+
+<style>
+#chatButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f56607;
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 999;
+}
+
+#chatButton:hover {
+  background-color: #d45506;
+  transform: scale(1.05);
+}
+
+.chat-modal {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 400px;
+  height: 600px;
+  z-index: 1000;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.chat-container {
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background-color: #02414b;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.close-button:hover {
+  opacity: 0.8;
+}
+
+.chat-container iframe {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .chat-modal {
+    width: calc(100% - 40px);
+    height: 500px;
+  }
+}
+</style>
+
+<script>
+function openChat() {
+  document.getElementById('chatModal').style.display = 'block';
+}
+
+function closeChat() {
+  document.getElementById('chatModal').style.display = 'none';
+}
+</script>
+
 </body>
 </html>
